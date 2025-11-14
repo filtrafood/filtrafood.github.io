@@ -1,0 +1,106 @@
+/* Style général pour le corps de la page */
+body {
+  /* J'utilise la couleur verte de ton logo. */
+  /* Si tu retrouves ton image 'nature.jpg', mets-la dans /img 
+     et remplace les 3 lignes suivantes par :
+     background-image: url('../img/nature.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+  */
+  background-color: #76B947;
+  font-family: Arial, sans-serif; /* Police de base */
+  margin: 0;
+  padding: 0;
+}
+
+/* --- L'EN-TÊTE (HEADER) --- */
+header {
+  display: flex; /* Aligne les éléments côte à côte */
+  justify-content: space-between; /* Espace entre le logo et le menu */
+  align-items: center; /* Centre verticalement */
+  padding: 10px 20px;
+  background-color: white; /* Fond blanc pour l'en-tête */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#logo {
+  height: 80px; /* Taille du logo */
+  width: auto;  /* Garde les proportions */
+}
+
+/* Le menu de navigation */
+header nav ul {
+  list-style-type: none; /* Enlève les puces */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Aligne les liens du menu */
+}
+
+header nav .item {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #dcedc8; /* Vert plus clair */
+  margin-left: 10px;
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+header nav .item:hover {
+  background-color: #aed581; /* Vert plus foncé au survol */
+}
+
+/* --- LE CONTENU PRINCIPAL --- */
+main {
+  text-align: center; /* Centre tout le texte */
+}
+
+#title {
+  margin-top: 100px;
+  font-size: 45px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Ombre pour la lisibilité */
+}
+
+#subtitle {
+  margin-top: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.bouton-container {
+  margin-top: 50px;
+}
+
+#bouton-ready {
+  font-size: 30px;
+  color: white;
+  background-color: #d32f2f; /* Rouge */
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+#bouton-ready:hover {
+  transform: scale(1.05); /* Grossit un peu au survol */
+}
+
+/* Style pour la page "application" */
+.contenu-page {
+  margin: 50px auto;
+  width: 80%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contenu-page p {
+  font-size: 20px;
+  color: #333;
+}
